@@ -9,14 +9,14 @@ import ExerciseDetail from './pages/ExcerciseDetail'
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/excercise/:id" element={<ExerciseDetail />} />
       </Routes>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }
 

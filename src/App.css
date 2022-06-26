@@ -8,3 +8,35 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  --padding: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+}
+
+#root + header {
+  grid-area: header;
+}
+
+#root + main {
+  grid-area: main;
+}
+
+#root + footer {
+  grid-area: footer;
+}
